@@ -400,4 +400,6 @@ https://g.co/bard/share/0ff09e2380c7
 
 npm install @abacritt/angularx-social-login
 
+npm install --force 
+
 /////////////////////////////////////////////
