@@ -45,7 +45,7 @@ export class ContactFormComponent implements OnInit  {
         const formData = this.contactForm.value;
   
         // Send the form data to the backend
-        this.http.post('https://9rfn3t-4000.csb.app/contact', formData).subscribe(
+        this.http.post('https://fxh4m2-4000.csb.app/contact', formData).subscribe(
           (response) => {
             console.log('Form submitted successfully!', response);
             alert('Gracias! Se le enviará pronto un email con más información.');
