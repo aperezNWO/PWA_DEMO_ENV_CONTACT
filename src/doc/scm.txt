@@ -11,7 +11,7 @@
 /////////////////////////////////////////////////////////////////
 
 git add * 
-git commit -m"Application [ANGULAR DEMO - ENV_CONTACT] v[1.4.1]" -m"1) CODE SIMPLIFICATION. " -a
+git commit -m"Application [ANGULAR DEMO - ENV_CONTACT] v[1.4.2]" -m"1) CODE SIMPLIFICATION. " -a
 git push 
 git pull
 

@@ -141,20 +141,3 @@ export class ListItem
         //
     }
 }
-//
-export class DiskInfo
-{
-    //
-    constructor(public value : number, public graph : string)
-    {
-        //
-    }
-}
-//
-export interface HanoiStep
-{
-    //
-    n: number;
-    from: string;
-    to: string;
-}

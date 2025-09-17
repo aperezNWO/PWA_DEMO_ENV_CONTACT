@@ -40,7 +40,7 @@ export class ContactFormComponent implements OnInit  {
   
         // Send the form data to the backend
         //this.http.post('https://fxh4m2-4000.csb.app/contact', formData).subscribe(
-        this.http.post(`${this.getValueFromConfig('baseUrlNodeJs')}/contact`, formData).subscribe(
+        this.http.post(`${this.getValueFromConfig('baseUrlNodeJs')}contact`, formData).subscribe(
           (response) => {
             //
             console.log('Form submitted successfully!', response);

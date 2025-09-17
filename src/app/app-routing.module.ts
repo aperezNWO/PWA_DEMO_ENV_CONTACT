@@ -1,7 +1,6 @@
-import { NgModule                      } from '@angular/core';
-import { Route, RouterModule, Routes   } from '@angular/router';
-import { HomeComponent                 } from './_modules/_home/home/home.component';import { NotFoundPageComponent } from './_modules/_home/not-found-page/not-found-page.component';
-import { ContactFormComponent          } from './_modules/about/contactForm/contact-form..component';
+import { NgModule              } from '@angular/core';
+import { Route, RouterModule   } from '@angular/router';
+import { ContactFormComponent  } from './_modules/about/contactForm/contact-form..component';
 
 //
 export interface _Route extends Route
@@ -11,10 +10,9 @@ export interface _Route extends Route
 
 //
 export const routes : _Route[] = [ 
-  { path: 'Home'             , component: HomeComponent              , caption : 'Home'                  },
-  { path: ''                 , component: HomeComponent              , caption : ''                      },
-  { path: 'ContactForm'      , component: ContactFormComponent       , caption : 'About - Contact Form'  },
-  { path: '**'               , component: NotFoundPageComponent      , caption : ''                      },
+  { path: ''                 , component: ContactFormComponent      , caption : 'About - Contact Form'    },                     
+  { path: 'ContactForm'      , component: ContactFormComponent      , caption : 'About - Contact Form'    },
+  { path: '**'               , component: ContactFormComponent      , caption : 'About - Contact Form'    }                 
 ];
 
 @NgModule({

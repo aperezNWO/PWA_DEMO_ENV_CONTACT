@@ -14,13 +14,9 @@ import { AppComponent                                   } from './app.component'
 import { AppRoutingModule                               } from './app-routing.module';
 import { ConfigService                       } from './_services/config/config.service';
 import { BackendService                      } from './_services/backend/backend.service';
-import { NavComponent                        } from './_modules/_home/nav/nav.component';
-import { HomeComponent                       } from './_modules/_home/home/home.component';
-import { NotFoundPageComponent               } from './_modules/_home/not-found-page/not-found-page.component';
 import { finalize, tap                       } from 'rxjs';
 import { NgbHighlight, NgbModule             } from '@ng-bootstrap/ng-bootstrap';
-import { NgbPaginationModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
-import { NgxSignaturePadModule               } from '@eve-sama/ngx-signature-pad';
+import { NgbAlertModule                      } from '@ng-bootstrap/ng-bootstrap';
 import { ButtonModule                        } from 'primeng/button';
 import { ContactFormComponent                } from './_modules/about/contactForm/contact-form..component';
 import { FacebookLoginProvider, SocialAuthServiceConfig, SocialLoginModule } from '@abacritt/angularx-social-login';
@@ -80,9 +76,6 @@ export function loadConfig(configService: ConfigService) {
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    NavComponent,
-    NotFoundPageComponent,
     ContactFormComponent
   ],
   providers: [DatePipe, DecimalPipe, HttpClient, provideClientHydration(),
@@ -121,13 +114,9 @@ export function loadConfig(configService: ConfigService) {
     HttpClientModule,
     BrowserModule,
     BrowserAnimationsModule,
-    NgxSignaturePadModule,
     NgbModule,
-    NgbModule,
-    NgbPaginationModule,
     NgbAlertModule,
     NgbHighlight,
-    NgbPaginationModule,
     DecimalPipe,
     FormsModule,
     AsyncPipe,
