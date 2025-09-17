@@ -4,7 +4,7 @@
     "appEnv"             : "[ENV_CONTACT]",
     "appVersion"         : "1.3.90",
     "baseUrlNetCore"     : "https://angularwebapidemo.somee.com/",
-    "baseUrlNodeJs"      : "https://wg5nqx-4000.csb.app/",
+    "baseUrlNodeJs"      : "https://fxh4m2-4000.csb.app/",
     "baseUrlNodeJsChat"  : "https://v3mf3v-3000.csb.app/",
     "baseUrlNodeJsOcr"   : "https://9tvpj7-3000.csb.app/upload",
     "baseUrlSpringBoot"  : "https://r9ls6q-8080.csb.app/",
