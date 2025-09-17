@@ -2,7 +2,7 @@
     "appBrand"           : "[TUTORIAS]",
     "appName"            : "[CONTACTENOS]",
     "appEnv"             : "[ENV_CONTACT]",
-    "appVersion"         : "1.4.1",
+    "appVersion"         : "1.4.2",
     "baseUrlNetCore"     : "https://angularwebapidemo.somee.com/",
     "baseUrlNodeJs"      : "https://fxh4m2-4000.csb.app/"
 }
