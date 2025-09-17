@@ -11,33 +11,6 @@ export class ConfigService {
   {
 
   }
-  loadSCMList() {
-    return this.http.get('./assets/json/scm.json').toPromise()
-      .then((data: any) => {
-          //
-          //console.log("loading scm list..." + JSON.stringify(data));
-          //
-          _environment.scmList = data; // Assign loaded data to environment variable
-      })
-      .catch(error => {
-        console.error('Error loading configuration:', error);
-      });
-  }
-  
-  //
-  // ONLY HAPPENS ONCE ON APPMODULE LOADING
-  loadAiPrompts() {
-    return this.http.get('./assets/json/llm.json').toPromise()
-      .then((data: any) => {
-          //
-          //console.log("loading LLMs..." + JSON.stringify(data));
-          //
-          _environment.aiPrompts = data; // Assign loaded data to environment variable
-      })
-      .catch(error => {
-        console.error('Error loading configuration:', error);
-      });
-  }
   // ONLY HAPPENS ONCE ON APPMODULE LOADING
   loadConfig() {
     return this.http.get('./assets/config.json').toPromise()

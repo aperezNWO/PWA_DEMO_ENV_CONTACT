@@ -1,7 +1,7 @@
-import { Component, VERSION    } from '@angular/core';
-import { Router                } from '@angular/router';
-import { Title                 } from '@angular/platform-browser';
-import { ConfigService         } from './_services/config/config.service';
+import { Component, VERSION                     } from '@angular/core';
+import { Router                                 } from '@angular/router';
+import { Title                                  } from '@angular/platform-browser';
+import { ConfigService                          } from './_services/config/config.service';
 import { CustomErrorHandler, LoggingInterceptor } from './app.module';
 import { ActivatedRoute                         } from '@angular/router';
 @Component({
@@ -10,8 +10,6 @@ import { ActivatedRoute                         } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-   //
-   title          : string = '[TUTORIAS DE PROGRAMACION - FORMULARIO DE CONTACTO]';
    //
    _title         : string = '';
    _appName       : string = '';
@@ -39,32 +37,11 @@ export class AppComponent {
     keyName          = 'appVersion';
     keyValue         = this.configService.getConfigValue(keyName);
     this._appVersion = keyValue;
-    //
-    console.log(`${keyName} :  ${this.configService.getConfigValue(keyName)} `)
   }
   //
   ngOnInit() {
       //
-      this.titleService.setTitle(`${this._appName} - ${this._appVersion}`);
-      //
-      this.route.queryParams.subscribe(params => {
-        //
-        this.redirectPage = params['redirectPage'] ? params['redirectPage'] : "" ;
-        //
-        if (this.redirectPage !== undefined)
-        {
-          switch (this.redirectPage)
-          {
-            case "sudoku":
-              //
-              console.log("Redirecting To Page : "  +  this.redirectPage );
-              //
-              this.router.navigateByUrl('/Sudoku');
-              //
-              break;
-            }
-          }
-      });
+      this.titleService.setTitle(`${this._appName} - v[${this._appVersion}]`);
   }
   //
   getValueFromConfig(key: string) {
